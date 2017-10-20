@@ -6,6 +6,7 @@ function Welcome(props) {
 // Introducing yet another component that includes the other component three times.
 function App() {
   return (
+    // Every component must have a single root element, that is the purpose of a <div> element.
     <div>
       <Welcome name="Sara" />
       <Welcome name="Cahal" />
