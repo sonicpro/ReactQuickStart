@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sophisticated Component Refactored</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel" src="src/ComponentsAndProps/avatar.jsx"></script>
+    <script type="text/babel" src="src/ComponentsAndProps/userInfo.jsx"></script>
+    <script type="text/babel" src="src/ComponentsAndProps/comment.jsx"></script>
+    <script type="text/babel">
+      const comment = {
+        author: {
+          avatarUrl: 'http://placekitten.com/g/64/64',
+          name: 'Hello Kitty'
+        },
+        text: 'I hope your enjoy learning Rect!',
+        date: new Date()
+      };
+      ReactDOM.render(
+        <Comment
+          author={comment.author}
+          text={comment.text}
+          date={comment.date}
+        />,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>
