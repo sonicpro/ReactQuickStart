@@ -21,3 +21,13 @@
 .Dialog-message {
   font-size: larger;
 }
+.column-left {
+  float: left;
+}
+.column-right {
+  float: left;
+  padding-left:20px;
+}
+.clearfix {
+  clear: both;
+}

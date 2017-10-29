@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thinking in React - Static Version</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel" src="src/ThinkingInReact/searchBar.jsx"></script>
+    <script type="text/babel" src="src/ThinkingInReact/ProductCategoryRow.jsx"></script>
+    <script type="text/babel" src="src/ThinkingInReact/productRow.jsx"></script>
+    <script type="text/babel" src="src/ThinkingInReact/productTable.jsx"></script>
+    <script type="text/babel" src="src/ThinkingInReact/filterableProductTable.jsx"></script>
+    <script type="text/babel">
+      const products = [
+        { category: "Sporting Goods", price: "$49.99", stocked: true, name: "Football" },
+        { category: "Sporting Goods", price: "$9.99", stocked: true, name: "Baseball" },
+        { category: "Sporting Goods", price: "$29.99", stocked: true, name: "Basketball" },
+        { category: "Electronics", price: "$99.99", stocked: true, name: "iPod Touch" },
+        { category: "Electronics", price: "$399.99", stocked: true, name: "iPhone 5" },
+        { category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7" }
+      ];
+      ReactDOM.render(
+        <FilterableProductTable products={products} />,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>
