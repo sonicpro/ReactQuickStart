@@ -31,3 +31,6 @@
 .clearfix {
   clear: both;
 }
+.out-of-stock {
+  color: #f00;
+}
