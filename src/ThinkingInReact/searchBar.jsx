@@ -7,6 +7,9 @@ function SearchBar(props) {
           placeholder="Search..."
           value={props.filterText}/>
       </div>
+      {/* Don't be deluded by the JSX look. "checked" is not an input's attribute here,
+      it is the input element property. If it was an attribute,
+      the checkbox would render checked whatever the "checked" attribute value was. */}
       <input
         id="checkbox1"
         type="checkbox"
